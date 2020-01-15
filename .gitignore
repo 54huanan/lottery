@@ -1,0 +1,6 @@
+#npm
+server/node_modules/
+product/node_modules/
+product/dist/
+temp.json
+error.json

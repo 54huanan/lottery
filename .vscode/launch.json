@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach",
+            "port": 9228,
+            "restart": true,
+            "timeout": 60000,
+            "protocol": "inspector"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch",
+            "cwd": "${workspaceFolder}/product",
+            "program": "${workspaceFolder}/product/node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+            "args": [
+                "--colors",
+                "--progress",
+                "--inline",
+                "--config",
+                "webpack.dev.js",
+                "--mode",
+                "development"
+            ]
+        },
+    ]
+}
